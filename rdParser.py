@@ -31,7 +31,6 @@ class recDescent:
 
     # lexer - tokenize the expression into a list of tokens
     # the tokens are stored in an list which can be accessed by self.tokens
-    # do not edit any piece of code in this function
     def lex(self):
         self.tokens = re.findall("[-\(\)=]|[!<>]=|[<>]|\w+|[^ +]\W+", self.expr)
         # filter out the possible spaces in the elements
